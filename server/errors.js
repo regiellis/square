@@ -11,9 +11,10 @@
  function PageNotFound (request, response, next) {
     let error = new Error('Page Not Found');
         response.status(404);
+        console.log(response);
         response.json({
             message: error.message,
-            status: 404
+            status: response.statusCode
         })
         next();
  }
@@ -22,7 +23,7 @@
     response.status(error.status || 500);
     response.json({
         message: error.message,
-        status: error.status || 500,
+        status: response.statusCode,
         error: (process.env.NODE_ENV === 'production')
         ? {}
         : error.stack
