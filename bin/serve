@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+/*
+ * Square Simple Server
+ * A simple express server setup for front-end framework studies, 
+ * alternative to using python's simple server.
+ * 
+ * Build Date / Update Date: Dec 12th 2015
+ */
+
+ 'use strict';
+ const Debug = require('debug')('sqaure');
+ const Server = require('../server');
+
+ Server.listen(process.env.SERVER_PORT || 8080, () => {
+    Debug(`Square server is listening on port: ${process.env.SERVER_PORT || 8080}`);
+ });

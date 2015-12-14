@@ -1,0 +1,30 @@
+{
+  "name": "square",
+  "version": "1.0.0",
+  "description": "A simple express server setup for front-end framework studies, alternative to using python's simple server",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon ./bin/serve",
+    "start": "node ./bin/serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regiellis/square.git"
+  },
+  "author": "Regi Ellis <regi@bynine.io> (http://bynine.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/regiellis/square/issues"
+  },
+  "homepage": "https://github.com/regiellis/square#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1",
+    "serve-static": "^1.10.0",
+    "static-favicon": "^2.0.0-alpha"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
+}
